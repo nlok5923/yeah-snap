@@ -1,0 +1,150 @@
+@import "../../../Sass/imports";
+
+.create-page {
+    margin-left: 3.3%;
+
+    &-header {
+        h1 {
+            font-weight: bold;
+            @include font-config(28px, bolder, "montserrat", black);
+            line-height: 2em;
+        }
+    }
+
+    &-container {
+
+        &-create-btn {
+            button {
+                border-radius: 10px;
+                font-family: "montserrat";
+                color: #ffffff;
+                background: rgba(49, 156, 255, 1);
+                padding: 3px 20px;
+                text-decoration: none;
+                border: none;
+                letter-spacing: 2px;
+                box-shadow: 0px 1px 4px 0px rgba(98, 98, 98, 0.25);
+                font-size: 18px;
+                cursor: pointer;
+                display: block;
+                margin: auto;
+                margin-bottom: 1%;
+                margin-right: 65%;
+            }
+        }
+
+        &-title,
+        &-domains,
+        &-description,
+        &-faq,
+        &-duration,
+        &-outcomes,
+        &-prequisites,
+        &-price,
+        &-link,
+        &-cover-image {
+            margin-top: 2%;
+        }
+
+        &-faq {
+
+            &-element {
+                margin-bottom: 7%;
+            }
+
+            button {
+                border-radius: 10px;
+                font-family: "montserrat";
+                color: #ffffff;
+                background: rgba(49, 156, 255, 1);
+                padding: 8px 20px;
+                text-decoration: none;
+                border: none;
+                letter-spacing: 2px;
+                box-shadow: 0px 1px 4px 0px rgba(98, 98, 98, 0.25);
+                margin-top: 3%;
+                font-size: 13px;
+                cursor: pointer;
+            }
+        }
+
+        &-cover-image {
+            img {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            &-upload {
+                input[type="file"] {
+                    display: none;
+                }
+
+                width: 60%;
+                height: 50%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+::placeholder {
+    @include font-config(14px, bolder, "montserrat", rgba(135, 135, 135, 1));
+    padding-left: 5px;
+}
+
+.field-label {
+    @include font-config(18px, bolder, "montserrat", black);
+}
+
+.course-inputStyle {
+    outline: none;
+    padding: 0 5px;
+    border: none;
+    height: 3.2em;
+    box-shadow: 0px 1px 4px 0px rgba(98, 98, 98, 0.25);
+    border-radius: 10px;
+    width: 40em;
+}
+
+.course-create {
+    &-wrapper-class {
+        border: 1px solid #E3E3E3;
+        box-shadow: 0px 0px 4px rgba(84, 84, 84, 0.25);
+        border-radius: 12px;
+        width: 70%;
+        padding: 5px;
+        height: 300px;
+        box-sizing: border-box;
+    }
+
+    &-editor-class {
+        border-radius: 12px;
+        background-color: #f2f2f2;
+        max-height: 55%;
+        border: 1px solid #ccc;
+        padding: 0 5px;
+    }
+
+    &-toolbar-class {
+        height: 40%;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+    }
+}
+
+.delete-btn {
+    background-color: red !important;
+    float: right;
+    margin-right: 29%;
+}
+
+.course-description-area {
+    outline: none;
+    padding: 0 5px;
+    border: none;
+    height: 3.2em;
+    box-shadow: 0px 1px 4px 0px rgba(98, 98, 98, 0.25);
+    border-radius: 10px;
+    width: 70%;
+    height: 10em;
+}

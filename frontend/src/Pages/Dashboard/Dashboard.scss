@@ -1,0 +1,39 @@
+@import "../../Sass/imports";
+
+.creator-dashboard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &-container {
+        width: 82%;
+        margin-left: 1%;
+
+        &-header {
+            margin-top: 3%;
+            width: 60%;
+            margin-left: 3.5%;
+
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            h1 {
+                margin-left: 0.8%;
+                @include font-config(28px, bolder, "montserrat", black);
+            }
+
+            &-search {
+                height: 6vh;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &-navigation {
+        width: 17%;
+    }
+}
