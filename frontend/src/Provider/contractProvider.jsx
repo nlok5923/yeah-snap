@@ -10,7 +10,7 @@ const UserProvider = (props) => {
   const [contract, setContract] = useState(null);
   const [address, setAddress] = useState('');
 
-  const contractAddress = "0x2c7E6d8f0784752e2614e7ac37C6A7977Cb3B839"
+  const contractAddress = "0x9221B403EC72C60CC5aF8ff681E1F6eFaFD3E25a"
   const _initEthers = async () => {
     let ethProvider = new ethers.providers.Web3Provider(window.ethereum);
     let contractInstance = new ethers.Contract(contractAddress, contractArtifact.abi, ethProvider.getSigner(0));

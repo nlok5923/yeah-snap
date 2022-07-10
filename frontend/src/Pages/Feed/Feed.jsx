@@ -37,6 +37,7 @@ const Feed = () => {
                             style={{
                                 width: 700,
                             }}
+                            className="card"
                             cover={
                                 <img
                                     alt="example"
